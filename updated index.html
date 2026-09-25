@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,7 +67,7 @@
   <div class="box" onclick="revealNext()">Open Me</div>
   
   <div class="content" id="content1">
-    <img src="https://i.imgur.com/vVIw1at.jpeg" class="flower-img" alt="Jasmine Flower">
+    <img src="https://i.imgur.com/vVIw1at.jpeg?v=2" class="flower-img" alt="Jasmine Flower">
     <p>This is for the calmness you bring, like jasmine in the breeze 🌼</p>
   </div>
   
@@ -75,19 +76,19 @@
   </div>
   
   <div class="content" id="content3">
-    <img src="https://i.imgur.com/vVIw1at.jpeg" class="memory-img" alt="Memory Photo">
+    <img src="https://i.imgur.com/vVIw1at.jpeg?v=2" class="memory-img" alt="Memory Photo">
     <p>This memory still makes me smile 😊</p>
   </div>
   
   <div class="content" id="content4">
-    <h2>You’re not just beautiful. You’re unforgettable. 💙</h2>
-    <img src="https://i.imgur.com/vVIw1at.jpeg" class="her-photo show" alt="Pranjali's Photo">
-
+    <h2>You're not just beautiful. You're unforgettable. 💙</h2>
+    <img src="https://i.imgur.com/vVIw1at.jpeg?v=2" class="her-photo show" alt="Mahak's Photo">
+ 
     <audio id="song" controls preload="metadata">
       <source src="https://media.vocaroo.com/mp3/1oOLet1WXqvk" type="audio/mpeg">
       Your browser does not support the audio element.
     </audio>
-
+ 
     <div class="lyrics">
       Tera hone laga hoon<br>
       Khone laga hoon<br>
@@ -96,11 +97,11 @@
       Kuch zyada hone laga hoon main 🌙
     </div>
   </div>
-
+ 
   <div id="loading-indicator">
     <p>Loading Audio...</p>
   </div>
-
+ 
   <script>
     window.addEventListener('DOMContentLoaded', () => {
       let currentStep = 0;
@@ -112,7 +113,7 @@
         loadingIndicator.style.display = 'none';
         audio.play();
       });
-
+ 
       window.revealNext = function() {
         currentStep++;
         if(currentStep === 1) {
